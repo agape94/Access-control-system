@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutCheckboxes"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_logs_str"
+            android:layout_alignParentTop="true"
+            android:id="@+id/textViewActionType"
+            android:layout_margin="22dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxLoginAction"
+            android:layout_below="@+id/textViewActionType"
+            android:text="Login action"
+            android:checked="true"
+            android:layout_marginLeft="30dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxLoginAdminAction"
+            android:layout_below="@+id/checkBoxLoginAction"
+            android:text="Admin login"
+            android:checked="true"
+            android:layout_marginLeft="30dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxDoorOpenAction"
+            android:layout_below="@+id/checkBoxLoginAdminAction"
+            android:text="Door open"
+            android:checked="true"
+            android:layout_marginLeft="30dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxUserChanged"
+            android:layout_toRightOf="@+id/checkBoxLoginAction"
+            android:layout_below="@id/textViewActionType"
+            android:text="User changed"
+            android:checked="true"
+            android:layout_marginLeft="50dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxDoorOpenAction"
+            android:layout_margin="10dp"
+            android:id="@+id/radioButtonsFilter"
+            android:checkedButton="@id/radioBtnAllTime"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:text="All the time"
+                android:id="@+id/radioBtnAllTime"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:text="This month"
+                android:id="@+id/radioBtnLastMonth"
+                android:checked="false"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:text="Last week"
+                android:id="@+id/radioBtnLastWeek"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCancelFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonsFilter"
+            android:layout_toStartOf="@+id/checkBoxUserChanged"
+            android:background="@color/colorCancel"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnApplyFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkBoxUserChanged"
+            android:layout_below="@+id/radioButtonsFilter"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="19dp"
+            android:background="@color/colorAccent"
+            android:text="Apply"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

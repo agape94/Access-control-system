@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvActionTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp"
+        android:text="Edit user:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:id="@+id/etFirstName"
+        android:layout_below="@+id/tvActionTitle"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:id="@+id/etLastName"
+        android:layout_below="@+id/etFirstName"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/etUsername"
+        android:layout_below="@+id/etLastName"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="5dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is administrator"
+        android:layout_below="@+id/etPassword"
+        android:id="@+id/cbIsAdministrator"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/btnCancelEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOkEdit"
+        android:layout_alignBottom="@+id/btnOkEdit"
+        android:layout_alignStart="@+id/tvActionTitle"
+        android:layout_marginStart="63dp"
+        android:background="@color/colorCancel"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOkEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/cbIsAdministrator"
+        android:layout_marginEnd="77dp"
+        android:layout_marginTop="31dp"
+        android:background="@color/colorAccent"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/alex/AndroidStudioProjects/OpenTheDoor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/alex/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7a846c39dc4829baac160eba4ad9f6ea/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/alex/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f0ecc477db0ed1674ae01c00bc74c145/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

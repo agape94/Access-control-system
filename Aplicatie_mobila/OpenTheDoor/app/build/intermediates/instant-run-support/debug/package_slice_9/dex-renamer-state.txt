@@ -1,0 +1,4 @@
+#Sun Jun 03 18:24:06 EEST 2018
+base.0=/home/alex/AndroidStudioProjects/OpenTheDoor/app/build/intermediates/transforms/dexMerger/debug/314
+path.0=classes.dex
+renamed.0=classes.dex
